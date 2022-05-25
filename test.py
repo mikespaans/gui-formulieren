@@ -1,54 +1,65 @@
 # import tkinter as tk
 # from tkinter import ttk
-# from tkinter.messagebox import showinfo
-# from calendar import month_name
 
+
+# # root window
 # root = tk.Tk()
-
-# # config the root window
 # root.geometry('300x200')
 # root.resizable(False, False)
-# root.title('Combobox Widget')
+# root.title('Spinbox Demo')
 
-# # label
-# label = ttk.Label(text="Please select a month:")
-# label.pack(fill=tk.X, padx=5, pady=5)
+# # Spinbox
+# current_value = tk.StringVar(value=0)
+# spin_box = ttk.Spinbox(
+#     root,
+#     from_=0,
+#     to=30,
+#     textvariable=current_value,
+#     wrap=True)
 
-# # create a combobox
-# selected_month = tk.StringVar()
-# month_cb = ttk.Combobox(root, textvariable=selected_month)
-
-# # get first 3 letters of every month name
-# month_cb['values'] = [month_name[m][0:3] for m in range(1, 13)]
-
-# # prevent typing a value
-# month_cb['state'] = 'readonly'
-
-# # place the widget
-# month_cb.pack(fill=tk.X, padx=5, pady=5)
-
-
-# # bind the selected value changes
-# def month_changed(event):
-#     """ handle the month changed event """
-#     showinfo(
-#         title='Result',
-#         message=f'You selected {selected_month.get()}!'
-#     )
-
-# month_cb.bind('<<ComboboxSelected>>', month_changed)
+# spin_box.pack()
 
 # root.mainloop()
 
 
+# import string # it is built-in lib
+# # print(string.ascii_lowercase)
+# print (string.ascii_letters)
 
 
 
-from datetime import date
+# def dont_give_me_five(start,end):
+#     n = 0
+#     for i in range(start,end + 1):
+#         AlWeggehaald = 0
+#         for x in str(i):
+#             Test = str(x)
+#             if Test == "5":
+#                 n -= 1
+#                 AlWeggehaald += 1
+#         if AlWeggehaald > 0:
+#             n += AlWeggehaald - 1
+            
+#         n += 1
 
-d0 = date(2008, 8, 18)
-d1 = date(2008, 11, 26)
-delta = d1 - d0
-print(delta.days)
+#     return n   # amount of numbers
 
 
+# TEst = 5434
+# if "5" not in str(TEst):
+#     print ("test")
+import tkinter as tk
+
+# root window
+root = tk.Tk()
+root.geometry('300x200')
+root.resizable(False, False)
+root.title('Spinbox Demo')
+
+
+Test = tk.StringVar(value=False)
+NieuwWoord = Test.get()
+print (NieuwWoord)
+
+
+root.mainloop()
