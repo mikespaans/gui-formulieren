@@ -63,13 +63,7 @@ def LettersInstellen(Woord):
     Zesde_Letter = tk.StringVar()
     Zevende_Letter = tk.StringVar()
 
-    Spinbox1 = False
-    Spinbox2 = False
-    Spinbox3 = False
-    Spinbox4 = False
-    Spinbox5 = False
-    Spinbox6 = False
-    Spinbox7 = False
+ 
 
     VariableList = [Eerste_Letter, Tweede_Letter, Derde_Letter, Vierde_Letter, Vijfde_Letter, Zesde_Letter, Zevende_Letter]
     SpinboxList = [Spinbox1, Spinbox2, Spinbox3, Spinbox4, Spinbox5, Spinbox6, Spinbox7]

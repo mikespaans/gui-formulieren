@@ -1,65 +1,72 @@
-# import tkinter as tk
-# from tkinter import ttk
+# def test(maf):
+#     if maf.isdigit():
+#         print ("test")
+#         return True
+    
+#     print ("geen nummer toegevoegd")
+#     return False
+
+# print (test(str(4)))
 
 
-# # root window
-# root = tk.Tk()
-# root.geometry('300x200')
-# root.resizable(False, False)
-# root.title('Spinbox Demo')
+# def TestFunctie(niks = False):
+#     if niks == True:
+#         return True
+#     else:
+#         return False
 
-# # Spinbox
-# current_value = tk.StringVar(value=0)
-# spin_box = ttk.Spinbox(
-#     root,
-#     from_=0,
-#     to=30,
-#     textvariable=current_value,
-#     wrap=True)
+# maf = TestFunctie("n")
 
-# spin_box.pack()
+# if maf == False:
+#     print ("weerkt")
 
-# root.mainloop()
+# def test():
+#     return 
 
-
-# import string # it is built-in lib
-# # print(string.ascii_lowercase)
-# print (string.ascii_letters)
+# # maf = test()
+# # maffer = str(maf)
+# # print (type(maffer))
+# # print (test())
 
 
 
-# def dont_give_me_five(start,end):
-#     n = 0
-#     for i in range(start,end + 1):
-#         AlWeggehaald = 0
-#         for x in str(i):
-#             Test = str(x)
-#             if Test == "5":
-#                 n -= 1
-#                 AlWeggehaald += 1
-#         if AlWeggehaald > 0:
-#             n += AlWeggehaald - 1
-            
-#         n += 1
+# import tkinter
+# from tkinter.font import Font
 
-#     return n   # amount of numbers
+# root = tkinter.Tk()
 
+# font_1 = Font(family='Arial', 
+#               size=24, 
+#               weight='normal', 
+#               slant='italic', 
+#               underline=1, 
+#               overstrike=1)
 
-# TEst = 5434
-# if "5" not in str(TEst):
-#     print ("test")
-import tkinter as tk
+# font_2 = Font(family='Helvetica',
+#               size=12,
+#               weight='bold',
+#               slant='italic',
+#               underline=0,
+#               overstrike=0)
 
-# root window
-root = tk.Tk()
-root.geometry('300x200')
-root.resizable(False, False)
-root.title('Spinbox Demo')
+# font_3 = Font(family='Courier', size=14, weight='normal', slant='roman', underline=0, overstrike=0)
+# font_4 = Font(family='Times', size=22, weight='bold', slant='roman', underline=0, overstrike=0)
 
+# my_label = tkinter.Label(master=root, text='Text', font=font_1)
+# my_label.pack()
 
-Test = tk.StringVar(value=False)
-NieuwWoord = Test.get()
-print (NieuwWoord)
+# tkinter.mainloop()
 
 
-root.mainloop()
+import random
+maf = " "
+
+
+for i in range(10):
+    RandomCijfer = random.randint(0,9)
+    
+    maf += str(RandomCijfer)
+
+
+# maf 
+print (maf)
